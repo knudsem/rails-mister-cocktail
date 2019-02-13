@@ -1,2 +1,4 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<%= @cocktail.name %>
+<%= link_to "retourner en arriere", cocktails_path %>
+<%= link_to "modifier nom ou infos", edit_cocktail_path(@cocktail) %>
+<%= link_to "supprimer ce delicieux cocktail", cocktail_path(@cocktail), method: :delete , confirm: ("t'es sur mon bro?")%>

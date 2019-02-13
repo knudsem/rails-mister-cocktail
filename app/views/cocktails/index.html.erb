@@ -1,2 +1,10 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
+
+<div class="container-fluid">
+<h1>Mister Cocktail</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Paol5brD9rE?autoplay=1&loop=1&playlist=gdst" frameborder="0" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<% @cocktails.each do |cocktail| %>
+<p><%= link_to "#{cocktail.name}", cocktail_path(cocktail)  %></p>
+<% end %>
+<%= link_to "add a cocktail", new_cocktail_path %>
+</div>
+</div>
